@@ -1,0 +1,37 @@
+.header {
+    background-color: rgb(51, 48, 48);
+    height: 80px;
+    display: flex;
+    position: relative;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__link {
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.3s all;
+    margin-right: 15px;
+
+    &:hover {
+        background-color: rgb(236, 198, 73);
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
