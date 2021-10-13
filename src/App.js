@@ -1,4 +1,4 @@
-import Header from './components/main/header/Header.js'
+import Header from './components/header/Header.js'
 
 import './App.scss';
 

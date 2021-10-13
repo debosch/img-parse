@@ -1,8 +1,8 @@
 import { createStore } from 'redux';
-import { reducers } from './reducers/rootReducer.js';
+import { inputReducer } from './reducers/rootReducer.js';
 
-export function configureStore(initialState = {}) {
-    const store = createStore(reducers, initialState);
+export function configureStore() {
+    const store = createStore(inputReducer);
     return store;
 }
 
