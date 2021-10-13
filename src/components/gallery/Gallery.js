@@ -5,9 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import './gallery.scss';
 
-//<Image source="https://via.placeholder.com/300x400"/>
 const Gallery = () => {
-    const dispatch = useDispatch();
     const images = useSelector(state => state.images);
 
     return (
