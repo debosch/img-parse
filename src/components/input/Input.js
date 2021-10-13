@@ -11,7 +11,8 @@ const Input = () => {
     function handleSubmit(e) {
         e.preventDefault();
 
-        dispatch({ type: ADD_IMAGE, payload: input});
+        input.length > 0 ? dispatch({ type: ADD_IMAGE, payload: input}) : alert("Input is empty");
+
         setInput("");
     }
 
